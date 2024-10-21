@@ -1,0 +1,117 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  input[type="text"], input[type="password"], input[type="date"], input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  #logoutBtn {
+    background-color: #f44336;
+  }
+  
+  #logoutBtn:hover {
+    background-color: #e53935;
+  }
+  
+  /* Error message styles */
+  #error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Container styles for login, register, and tasks */
+  .login-container, .register-container, .tasks-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .tasks-container {
+    max-width: 600px;
+  }
+  
+  .tasks-container form {
+    margin-bottom: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  ul li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    .login-container, .register-container, .tasks-container {
+      max-width: 100%;
+    }
+  }
+  

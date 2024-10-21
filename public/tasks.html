@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="tasks-container">
+    <h2>My Tasks</h2>
+    <form id="taskForm">
+      <label for="taskName">Task Name:</label>
+      <input type="text" id="taskName" name="taskName" required>
+      <label for="dueDate">Due Date:</label>
+      <input type="date" id="dueDate" name="dueDate" required>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <h3>Your Tasks</h3>
+    <ul id="taskList"></ul>
+
+    <h3>Delete Task</h3>
+    <form id="deleteTaskForm">
+      <label for="taskId">Task ID:</label>
+      <input type="number" id="taskId" name="taskId" required>
+      <button type="submit">Delete Task</button>
+    </form>
+
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script>
+    async function fetchTasks() {
+      const response = await fetch('/tasks');
+      const tasks = await response.json();
+      const taskList = document.getElementById('taskList');
+      taskList.innerHTML = tasks.map(task => `
+        <li>${task.taskId}: ${task.taskName} - ${task.dueDate} [${task.status}]</li>
+      `).join('');
+    }
+
+    document.getElementById('taskForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const taskName = document.getElementById('taskName').value;
+      const dueDate = document.getElementById('dueDate').value;
+      await fetch('/tasks', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ taskName, dueDate })
+      });
+      fetchTasks();
+    });
+
+    document.getElementById('deleteTaskForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const taskId = document.getElementById('taskId').value;
+      await fetch(`/tasks/${taskId}`, {
+        method: 'DELETE'
+      });
+      fetchTasks();
+    });
+
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+
+    fetchTasks();
+  </script>
+</body>
+</html>

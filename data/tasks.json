@@ -1,0 +1,55 @@
+[
+  {
+    "taskId": 1,
+    "taskName": "Finish project report",
+    "dueDate": "2024-10-15",
+    "status": "pending",
+    "userId": 1
+  },
+  {
+    "taskId": 2,
+    "taskName": "Prepare presentation",
+    "dueDate": "2024-10-20",
+    "status": "pending",
+    "userId": 1
+  },
+  {
+    "taskId": 3,
+    "taskName": "Send out invitations",
+    "dueDate": "2024-10-25",
+    "status": "completed",
+    "userId": 2
+  },
+  {
+    "taskId": 4,
+    "taskName": "Conduct team meeting",
+    "dueDate": "2024-10-30",
+    "status": "pending",
+    "userId": 3
+  },
+  {
+    "taskId": 5,
+    "taskName": "Review budget proposal",
+    "dueDate": "2024-11-05",
+    "status": "in progress",
+    "userId": 2
+  },
+  {
+    "taskId": 6,
+    "taskName": "task1",
+    "dueDate": "2024-10-23",
+    "status": "pending"
+  },
+  {
+    "taskId": 7,
+    "taskName": "task1",
+    "dueDate": "2024-10-23",
+    "status": "pending"
+  },
+  {
+    "taskId": 8,
+    "taskName": "task1",
+    "dueDate": "2024-10-23",
+    "status": "pending"
+  }
+]

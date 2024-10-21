@@ -1,0 +1,17 @@
+[
+  {
+    "userId": 1,
+    "username": "john_doe",
+    "hashedPassword": "$2b$10$z9Yw3K8vP/9vR0xS5L2PheEwuyO5cGdbzKFpGf1AeO6lN3uRqr4Sy"
+  },
+  {
+    "userId": 2,
+    "username": "jane_smith",
+    "hashedPassword": "$2b$10$R1Y/c0gLxlD/RO5W7XzVvO4K3Z35oYkBdy8QvU11c.0KxLRWtd3Yu"
+  },
+  {
+    "userId": 3,
+    "username": "admin_user",
+    "hashedPassword": "$2b$10$eDqvPZxDL28mnpxy8wCfq.S6nXZcOa.YcY3/QdOs0WseH0I5jIcPG"
+  }
+]
