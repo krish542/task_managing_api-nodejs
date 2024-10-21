@@ -73,9 +73,30 @@ task-manager-api/
 - **GET /tasks/:id**: Retrieve a specific task by ID (requires authentication).
 - **PUT /tasks/:id**: Update a task by ID (requires authentication).
 - **DELETE /tasks/:id**: Delete a task by ID (requires authentication).
+## Screenshots
+
+### Login Page
+![Login Page](screenshots/login.png)
+### Tasks Page
+![Tasks Page](screenshots/tasks.png)
+![task_add_delete](screenshots/tasks_add_delete.png)
 
 ## Testing
 You can test the API endpoints using tools like [Postman](https://www.postman.com/) or [curl](https://curl.se/).
+### Testing in Postman
+#### POST: Register User
+![POST: Register User](screenshots/POST_register_user.png)
+#### POST: Login User
+![POST: Login User](screenshots/POST_login_user.png)
+#### GET: Get tasks
+![GET: Get tasks](screenshots/GET_tasks.png)
+![GET: Get tasks 11](screenshots/GET_tasks_11.png)
+#### POST: Add task
+![POST: Add task](screenshots/POST_add_task.png)
+#### PUT: Update task
+![PUT: Update task](screenshots/PUT_update_task_11.png)
+#### DELETE: task(task id)
+![DELETE: task 11](screenshots/DELETE_task_11.png)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
