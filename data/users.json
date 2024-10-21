@@ -13,5 +13,15 @@
     "userId": 3,
     "username": "admin_user",
     "hashedPassword": "$2b$10$eDqvPZxDL28mnpxy8wCfq.S6nXZcOa.YcY3/QdOs0WseH0I5jIcPG"
+  },
+  {
+    "userId": 4,
+    "username": "user123",
+    "hashedPassword": "$2a$10$xrgYT8T5GgDjSf4rk8nrDO7eWJyMPovqOUNeLVOhQSDKMZCs0JsUW"
+  },
+  {
+    "userId": 5,
+    "username": "user2",
+    "hashedPassword": "$2a$10$KLfMrYwm608imUPMnoMdqedFt61Ifh3MdEBu9syDS6OJonSUBvMym"
   }
 ]
